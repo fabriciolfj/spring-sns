@@ -1,0 +1,9 @@
+aws:
+  region: us-east-2
+  sns:
+    topic:
+      product.events.arn: arn:aws:sns:us-east-2:805804964175:product-events
+  sqs:
+    queue: product-events
+    region: ${AWS_REGION:us-east-2}
+    url: ${AWS_SQS_URL:https://sqs.us-east-2.amazonaws.com}
